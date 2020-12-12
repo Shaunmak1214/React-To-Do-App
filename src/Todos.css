@@ -1,0 +1,26 @@
+.collection-item{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+
+}
+
+.collection-item > button{
+
+    background-color: rgb(77, 146, 202);
+    color: #eee;
+    padding: 10px 10px;
+    border-radius: 2px;
+    transition: all .5s ease;
+    border: 2px solid rgb(36, 78, 112);
+
+}
+
+.collection-item > button:hover{
+
+    background-color: #eee;
+    color: rgb(36, 78, 112);
+
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Todos.css';
 
 const Todos = ({todos, deleteTodo}) => {
 
@@ -7,7 +8,8 @@ const Todos = ({todos, deleteTodo}) => {
             return(
                 <div className="collection-item" key={todo.id}>
 
-                    <span onClick={() => {deleteTodo(todo.id)}}>{todo.content}</span>
+                    <span>{todo.content}</span>
+                    <button onClick={() => {deleteTodo(todo.id)}}>delete</button>
                     
                 </div>
             )
