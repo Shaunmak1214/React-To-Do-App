@@ -1,5 +1,7 @@
 import React from 'react'
 import './Todos.css';
+import { Button } from 'react-bootstrap'
+import { ReactComponent as Logo } from './icons/close.svg';
 
 const Todos = ({todos, deleteTodo}) => {
 
@@ -9,7 +11,7 @@ const Todos = ({todos, deleteTodo}) => {
                 <div className="collection-item" key={todo.id}>
 
                     <span>{todo.content}</span>
-                    <button onClick={() => {deleteTodo(todo.id)}}>delete</button>
+                    <Button onClick={() => {deleteTodo(todo.id)}}><Logo/>...</Button>
                     
                 </div>
             )

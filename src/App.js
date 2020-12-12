@@ -8,7 +8,8 @@ class App extends Component{
 
     todos: [
       {id: 1, content: 'Study React'},
-      {id: 2, content: 'Get good in react'}
+      {id: 2, content: 'Get good in react'},
+      {id: 3, content: 'React is hard as hell bruv'}
     ]
 
   }
