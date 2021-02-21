@@ -16,6 +16,7 @@ class AddTodo extends Component {
 
         e.preventDefault();
 
+        //pushing props up to app.js 
         this.props.addTodo(this.state);
 
         this.setState({
